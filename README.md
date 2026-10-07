@@ -53,9 +53,11 @@ O Keycloak não possui tela de login para a API: o token é pedido por requisiç
 |`password`| Senha do usuário |
 
 **2. Enviar e copiar o token**
+
 Clique em **Send**. A resposta é um JSON, e o valor de `access_token` é o JWT a ser usado nas chamadas.
 
 **3. Usar o token na API**
+
 Na requisição para qualquer serviço (por exemplo: `GET http://localhost:8081/accounts`), abra a aba **Authorization**, escolha **Bearer Token** e cole o `access_token`.
 
 O token expira em cerca de 5 minutos. Depois disso, basta repetir a requisição do passo 1 para gerar outro.
